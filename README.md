@@ -21,3 +21,9 @@ cd build
 cmake ..
 make -j8
 ```
+
+## How to run
+```
+../bin/receiver_cli -d db.csv --port 60000 -p ../parameters/16M-1024.json -t 1 --len 16
+../bin/sender_cli -q query.csv -a 127.0.0.1 -p ../parameters/16M-1024.json --port 60000 -t 1
+```
