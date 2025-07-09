@@ -1,0 +1,15 @@
+prefix=${pcfiledir}/../..
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT license.
+
+libdir=${prefix}/lib
+includedir=${prefix}/../include/SEAL-3.7
+
+Name: Microsoft SEAL
+Version: 3.7.2
+Description: An easy-to-use homomorphic encryption library
+
+
+Libs: -L"${libdir}" -lseal-3.7
+Requires: seal_msgsl >= 4
+Cflags: -std=c++17 -I"${includedir}"

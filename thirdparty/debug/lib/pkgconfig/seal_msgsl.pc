@@ -1,0 +1,9 @@
+prefix=${pcfiledir}/../..
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT license.
+
+Name: Microsoft GSL for Microsoft SEAL
+Version: 4.0.0
+Description: Guidelines Support Library
+
+Cflags: -I"${prefix}/../include"
